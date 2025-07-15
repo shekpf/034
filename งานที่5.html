@@ -14,19 +14,16 @@
        margin: 0;
        background-color: #e0f2f7;
     }
-
     canvas {
        border: 3px solid #4CAF50;
        background-color: #ffffff;
        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
        border-radius: 8px;
     }
-
     h1 {
        margin-bottom: 20px;
        color: #2e86c1;
     }
-
     p {
        margin-top: 20px;
        color: #555;
@@ -34,20 +31,14 @@
   </style>
 </head>
 <body>
-
-   <h1>พื้นที่สำหรับการวาด Canvas</h1>
-   <canvas id="myCanvas" width="400" height="200"></canvas>
-   <p>นี่คือพื้นที่ Canvas</p>
-
+    <h1>พื้นที่สำหรับการวาด Canvas</h1>
+    <canvas id="myCanvas" width="400" height="200"></canvas>
+    <p>นี่คือพื้นที่ Canvas</p>
   <script>
-     const canvas = document.getElementById('myCanvas');
-     const ctx = canvas.getContext('2d');
-
-     // ตั้งค่าฟอนต์และสี
-     ctx.font = "48px Arial";
-     ctx.fillStyle = "#ff6347";
-     
-  </script>
-
+      const canvas = document.getElementById('myCanvas');
+      const ctx = canvas.getContext('2d');
+      ctx.fillStyle = "#fff6347";
+      ctx.fillRect(50,50,100,75) 
+   </script>
 </body>
 </html>
